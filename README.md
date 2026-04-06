@@ -9,8 +9,10 @@ Analizar las ventas utilizando un archivo de Excel para identificar tendencias, 
 
 ## Dashboard
 
-![Proyecto_ Resumen Ejecutivo de Ventas Walmart - Dashboard](Proyecto_ Resumen Ejecutivo de Ventas Walmart - Dashboard.png)
+![Dashboard_Proyecto_ Resumen Ejecutivo de Ventas Walmart](Dashboard_Proyecto_ Resumen Ejecutivo de Ventas Walmart.png)
+
 ![Dashboard _Proyecto_Resumen ejecutivo de ventas Walmart_Ventas por metro cuadrado por departamento](Dashboard _Proyecto_Resumen ejecutivo de ventas Walmart_Ventas por metro cuadrado por departamento.png)
+
 ![Dashboard _Proyecto_Resumen ejecutivo de ventas Walmart_Ventas semanales por departamento en 2012](Dashboard _Proyecto_Resumen ejecutivo de ventas Walmart_Ventas semanales por departamento en 2012.png)
 
 ## Actividades realizadas

@@ -1,0 +1,28 @@
+,,,,
+, 📊 Descripción del analisis ,,,
+,"Este proyecto integra las habilidades esenciales de un analista: limpieza, KPIs, visualización y comunicación ejecutiva. se analiza la información del negocio y se buscan encontrar Contexto, Hallazgos clave o Insights, Evidencia e Implicaciones, para concentrar resultados en el resumen para la toma de decisiones",,,
+,,,,
+,,,,
+,,,,
+,📑 Tablas Incluidas,,,
+,Hoja,Descripción,Tipo de hoja,
+,raw_ventas,"Datos originales de ventas semanales, por tienda y departamento.",Raw Data,
+,raw_departamento,Catálogo de departamentos con sus nombres.,Lookup,
+,raw_tiendas,Catálogo de tiendas con tipo (A/B) y tamaño en m².,Lookup,
+,clean_ventas,"Datos depurados con uniones de catálogos (dept, tienda), semana estandarizada y nombre de depto.",Clean Data,
+,Pivot,Tablas dinamicas  de departamentos por ventas semanales,"Analizar herramienta para explorar y resumir datos rápidamente, sin modificar la base original",
+,Dashboard,resultados de KPI y graficas,Monitorear herramienta visual de monitoreo muestra los indicadores clave (KPIs),
+,Resumen,Información que responde las 4 preguntas de negocio usando el método Context → Finding → Implication , Decidir Dashboard Es una hoja de síntesis para toma de decisiones.,
+,,,,
+,,,,
+,📊 KPIs y Fórmulas,,,
+,KPI,Descripción,Fórmula en Sheets,Interpretación
+,Ventas por m²,Ventas ajustadas por tamaño de tienda,Ventas Totales / tamaño,Entre mas alta la cifra mas eficiencia por metro cuadrado
+,Porcentaje de participación,Ventas semanales por departamento,BUSCARV(departamento /Ventas semanales),Mientras mas alto el porcentaje mas ventas por semana
+,,,,
+,,,,
+,✅ QA / Validaciones,,,
+,Chequeo,Cómo verificar,Formula,Resultado
+,¿Existen tiendas sin departamento asignado?,Filtrar columna Dept = vacío.,"""=CONTAR.SI(clean_ventas!I:I,""no tiene departamento"")""",No hay tiendas sin valor asignado
+,¿Ventas negativas o nulas?,Buscar valores < 0 utilizando un COUNTIF,"CONTAR.SI(rango, criterio)",No hay ventas negativas o nulas
+,¿Tamaños en m² con valor 0?,Revisar que no sean 0 o vacíos.,"CONTAR.SI.CONJUNTO(rango), ",No hay tiendas con tamaño en m² con valor cero
